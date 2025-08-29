@@ -1,0 +1,53 @@
+--------------------------------------------------------------------------
+File: .gitignore
+Description: Specifies intentionally untracked files to ignore.
+--------------------------------------------------------------------------
+Python
+pycache/
+*.pyc
+*.pyo
+*.pyd
+
+Virtual Environments - IMPORTANT
+.venv/
+venv/
+rag_env/
+
+IDE / Editor specific
+.vscode/
+.idea/
+
+Local configuration - DO NOT commit secrets
+.env
+google_token.json
+token.json
+credentials.json
+
+Large data files - Add your PDF files here or the whole folder
+data/
+
+Dependencies
+/node_modules
+
+
+#### **How to Apply This Fix (CRITICAL STEPS)**
+
+You need to tell Git to stop tracking the files you've already committed.
+
+1.  **Ensure the `.gitignore` file is saved** in your project's root directory (`C:\Users\rishi\OneDrive\Desktop\rag_gemini`).
+2.  **Open your terminal** in that same directory.
+3.  **Remove the cached files** from Git's tracking (this will NOT delete your actual files):
+    ```bash
+    git rm -r --cached .
+    ```
+4.  **Re-add everything.** Git will now correctly use the `.gitignore` file and skip the large files:
+    ```bash
+    git add .
+    ```
+5.  **Commit the changes:**
+    ```bash
+    git commit -m "Add .gitignore and remove large data files from tracking"
+    ```
+6.  **Now, try pushing again.** The upload size will be very small, and the push should succeed.
+    ```bash
+    git push origin main

@@ -1,0 +1,31 @@
+
+# Core LangChain and LLM
+langchain
+langchain-community
+langchain-core
+langchain-elasticsearch
+ollama
+langchain-huggingface
+langchain-ollama
+
+# Web Frameworks
+fastapi
+uvicorn[standard]
+streamlit
+
+# Data Loading and Processing
+langchain-google-community # For Google Drive Loader
+unstructured[pdf, ocr]
+pypdf
+pytesseract # You also need to install the Tesseract binary
+sentence-transformers
+elasticsearch
+pdfminer.six==20221105
+
+# Utilities
+python-dotenv
+pydantic
+
+# Testing
+pytest
+pytest-mock
