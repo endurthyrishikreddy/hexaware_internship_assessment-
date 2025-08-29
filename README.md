@@ -94,7 +94,7 @@ cd hexaware
 ```
 
 
-###3. Set Up the Python Environment
+### 3. Set Up the Python Environment
 - It is highly recommended to use a virtual environment.
 
 ```
@@ -104,7 +104,7 @@ pip install -r requirements.txt
 ```
 
 
-###4. Configure Environment Variables
+### 4. Configure Environment Variables
 - Rename .env.example to .env.
 
  - Fill in the required values for your Elasticsearch URL, API Key, and Google Drive Folder ID.
